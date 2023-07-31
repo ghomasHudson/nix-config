@@ -10,11 +10,11 @@
     ../common/users/thomas
     #../common/users/layla
 
-    ../common/optional/gamemode.nix
-    ../common/optional/ckb-next.nix
-    ../common/optional/greetd.nix
+    #../common/optional/gamemode.nix
+    #../common/optional/ckb-next.nix
+    #../common/optional/greetd.nix
     ../common/optional/pipewire.nix
-    ../common/optional/quietboot.nix
+    #../common/optional/quietboot.nix
     #../common/optional/lol-acfix.nix
   ];
 
