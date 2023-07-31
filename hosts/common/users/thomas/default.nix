@@ -3,7 +3,7 @@ let ifTheyExist = groups: builtins.filter (group: builtins.hasAttr group config.
 in
 {
   users.mutableUsers = false;
-  users.users.misterio = {
+  users.users.thomas = {
     isNormalUser = true;
     shell = pkgs.fish;
     extraGroups = [
@@ -11,7 +11,6 @@ in
       "video"
       "audio"
     ] ++ ifTheyExist [
-      "minecraft"
       "network"
       "wireshark"
       "i2c"
@@ -24,11 +23,11 @@ in
     ];
 
     openssh.authorizedKeys.keys = [ (builtins.readFile ../../../../home/thomas/ssh.pub) ];
-    passwordFile = config.sops.secrets.misterio-password.path;
+    passwordFile = config.sops.secrets.thomas-password.path;
     packages = [ pkgs.home-manager ];
   };
 
-  sops.secrets.misterio-password = {
+  sops.secrets.thomas-password = {
     sopsFile = ../../secrets.yaml;
     neededForUsers = true;
   };
