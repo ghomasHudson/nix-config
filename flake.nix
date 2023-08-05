@@ -13,7 +13,7 @@
 
     hardware.url = "github:nixos/nixos-hardware";
     impermanence.url = "github:nix-community/impermanence";
-    nix-colors.url = "github:thomas77/nix-colors";
+    nix-colors.url = "github:Misterio77/nix-colors";
     sops-nix.url = "github:mic92/sops-nix";
 
     home-manager = {
@@ -24,11 +24,6 @@
       url = "gitlab:simple-nixos-mailserver/nixos-mailserver";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-minecraft = {
-      url = "github:thomas77/nix-minecraft";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     hyprland = {
       url = "github:hyprwm/hyprland/v0.25.0";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -42,10 +37,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    disconic.url = "github:thomas77/disconic";
-    website.url = "github:thomas77/website";
-    paste-thomas-me.url = "github:thomas77/paste.thomas.me";
-    yrmos.url = "github:thomas77/yrmos";
+    # disconic.url = "github:Misterio77/disconic";
+    website.url = "github:Misterio77/website";
+    # paste-Misterio77-me.url = "github:Misterio77/paste.thomas.me";
+    yrmos.url = "github:Misterio77/yrmos";
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
