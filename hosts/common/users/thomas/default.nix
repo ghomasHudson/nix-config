@@ -5,7 +5,7 @@ in
   users.mutableUsers = false;
   users.users.thomas = {
     isNormalUser = true;
-    shell = pkgs.fish;
+    shell = pkgs.bash;
     extraGroups = [
       "wheel"
       "video"
