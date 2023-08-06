@@ -26,9 +26,9 @@
     httpie # Better curl
     diffsitter # Better diff
     jq # JSON pretty printer and manipulator
-    trekscii # Cute startrek cli printer
+    #trekscii # Cute startrek cli printer
 
-    nil # Nix LSP
+    #nil # Nix LSP
     nixfmt # Nix formatter
     nix-inspect # See which pkgs are in your PATH
 
