@@ -30,7 +30,7 @@
 
     #nil # Nix LSP
     nixfmt # Nix formatter
-    nix-inspect # See which pkgs are in your PATH
+    #nix-inspect # See which pkgs are in your PATH
 
     ltex-ls # Spell checking LSP
   ];
