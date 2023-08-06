@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }: {
   imports = [
     inputs.hardware.nixosModules.common-cpu-intel
-    inputs.hardware.nixosModules.common-gpu-nvidia
+    #inputs.hardware.nixosModules.common-gpu-nvidia
     inputs.hardware.nixosModules.common-pc-ssd
 
     ./hardware-configuration.nix
@@ -66,10 +66,10 @@
 
 
   hardware = {
-    nvidia = {
-      prime.offload.enable = false;
-      modesetting.enable = true;
-    };
+    #nvidia = {
+    #  prime.offload.enable = false;
+    #  modesetting.enable = true;
+    #};
     opengl = {
       enable = true;
       driSupport = true;
