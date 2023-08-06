@@ -23,7 +23,7 @@ let
 in
 {
   home.persistence = {
-    "/persist/home/misterio".directories = [ "Mail" ];
+    "/persist/home/thomas".directories = [ "Mail" ];
   };
 
   accounts.email = {
@@ -32,7 +32,7 @@ in
       personal = rec {
         primary = true;
         address = "hi@m7.rs";
-        aliases = ["gabriel@gsfontes.com" "eu@misterio.me"];
+        aliases = ["gabriel@gsfontes.com" "eu@thomas.me"];
         passwordCommand = "${pass} ${smtp.host}/${address}";
 
         imap.host = "mail.m7.rs";
