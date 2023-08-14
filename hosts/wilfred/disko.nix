@@ -2,7 +2,7 @@
   disko.devices = {
     disk.nvme = {
       type = "disk";
-      device = "/dev/disk/by-id/ata-QEMU_DVD-ROM_QM00001";
+      device = "/dev/disk/by-uuid/92da76c4-f099-4c45-a019-0f5224b49b32";
       content = {
         type = "table";
         format = "gpt";
