@@ -27,6 +27,7 @@
 
   networking = {
     hostName = "wilfred";
+    hostId = "56b55cd9";
     useDHCP = true;
     interfaces.enp2s0 = {
       useDHCP = true;
