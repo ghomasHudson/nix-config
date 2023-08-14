@@ -13,7 +13,7 @@
     #../common/optional/gamemode.nix
     #../common/optional/ckb-next.nix
     #../common/optional/greetd.nix
-    ../common/optional/pipewire.nix
+    #../common/optional/pipewire.nix
     #../common/optional/quietboot.nix
     #../common/optional/lol-acfix.nix
   ];
@@ -24,7 +24,7 @@
   };
 
   networking = {
-    hostName = "wilfred";
+    hostName = "agnes";
     useDHCP = true;
     interfaces.enp2s0 = {
       useDHCP = true;
@@ -32,7 +32,7 @@
 
       ipv4 = {
         addresses = [{
-          address = "192.168.0.13";
+          address = "192.168.1.2";
           prefixLength = 24;
         }];
       };
@@ -54,15 +54,15 @@
   '';
 
   programs = {
-    adb.enable = true;
-    dconf.enable = true;
+    #adb.enable = true;
+    #dconf.enable = true;
     #kdeconnect.enable = true;
   };
 
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-  };
+  #xdg.portal = {
+  #  enable = true;
+  #  wlr.enable = true;
+  #};
 
 
   hardware = {
@@ -70,11 +70,11 @@
     #  prime.offload.enable = false;
     #  modesetting.enable = true;
     #};
-    opengl = {
-      enable = true;
-      driSupport = true;
-      driSupport32Bit = true;
-    };
+    #opengl = {
+    #  enable = true;
+    #  driSupport = true;
+    #  driSupport32Bit = true;
+    #};
   };
 
   system.stateVersion = "22.05";
