@@ -4,6 +4,7 @@
     #inputs.hardware.nixosModules.common-gpu-nvidia
     inputs.hardware.nixosModules.common-pc-ssd
 
+    ./disko.nix
     ./hardware-configuration.nix
 
     ../common/global
